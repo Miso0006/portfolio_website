@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/**************************** Forside *****************************/
+body {
+  background-color: #f1eee7;
+}
+.mappe {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.mappe img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mappe h1 {
+  position: absolute; /* Lægger h1 ovenpå billedet */
+  top: 50%; /* Vertikal placering */
+  left: 50%; /* Horisontal placering */
+  transform: translate(-50%, -50%); /* Centrerer både horisontalt og vertikalt */
+  color: #889a6f;
+  font-size: 80px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.mappe h2 {
+  position: absolute; /* Lægger h1 ovenpå billedet */
+  top: 60%; /* Vertikal placering */
+  left: 50%; /* Horisontal placering */
+  transform: translate(-50%, -50%); /* Centrerer både horisontalt og vertikalt */
+  color: #000000;
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.mappe h3 {
+  position: absolute; /* Lægger h1 ovenpå billedet */
+  top: 85%; /* Vertikal placering */
+  left: 50%; /* Horisontal placering */
+  transform: translate(-50%, -50%); /* Centrerer både horisontalt og vertikalt */
+  color: #000000;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.mappe img.pil {
+  position: absolute;
+  top: 280px; /* Justér så pilen placeres hvor du vil */
+  left: 50%; /* Centrer pilen horisontalt */
+  transform: translateX(-50%); /* Flyt pilen præcist til center */
+  width: 20px; /* eller den størrelse du ønsker */
+  cursor: pointer; /* evt. hvis pilen er klikbar */
+}
+
+.h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #889a6f;
+}
+.h2 {
+  font-family: "Nothing You Could Do";
+}
+
+.h3 {
+  font-family: "Nothing You Could Do";
+}
+.pil {
+  text-align: center;
+  width: 100%; /* eller hvad der passer */
+}
+
+.pil_img {
+  width: 20px; /* eller den størrelse du ønsker */
+  height: auto;
+}
+.p {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.knap {
+  text-align: center;
+}
+
+.img_forside {
+  width: 388.78px;
+  height: 469px;
+  object-fit: contain;
+}
+
+.billeder_kasser {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  flex-wrap: wrap; /* så de tilpasser sig små skærme */
+}
+
+.billede_kasse {
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.img_forside {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+.footer {
+  padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .mappe {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mappe img {
+    display: block; /* fjern mellemrum nedenunder billedet */
+    margin: 0 auto;
+    max-width: 1036px;
+    height: auto;
+  }
+
+  .mappe h1 {
+    font-size: 200px;
+    top: 50%;
+  }
+
+  .mappe h2 {
+    font-size: 50px;
+    top: 60%;
+  }
+
+  .mappe h3 {
+    font-size: 30px;
+  }
+
+  .mappe img.pil {
+    width: 25px;
+    top: 650px;
+  }
+
+  .h1 {
+    font-size: 60px;
+  }
+
+  .p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .knap {
+    margin: 40px 0;
+  }
+
+  .knap_img {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+
+  .billeder_kasser {
+    flex-wrap: nowrap; /* på desktop skal de stå ved siden af hinanden */
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .billede_kasse {
+    width: 30%;
+    height: auto;
+  }
+
+  .footer {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+}
+
+/************************** menu **********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1eee7;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.menu a:hover {
+  color: #889a6f;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  /******** burgermenu ********/
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #f1eee7;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
