@@ -4,18 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo" src="img/logo.webp" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <div class="mappe">
+            <img src="img/mappe.webp" alt="mappe">
+            <h1 class="h1">Portfolio</h1>
+            <h2 class="h2">Mia Gerdes Sørensen</h2>
+            <h3 class="h3">Scroll ned</h3>
+            <img class="pil" src="img/pil.webp" alt="pil">
+        </div>
+        <div>
+            <h1 class="h1">Velkommen</h1>
+            <p class="p">Jeg hedder Mia Gerdes Sørensen og er i gang med at afslutte mit 1. semester på
+                multimediedesignuddannelsen på KEA. </p>
+            <p class="p">
+                Her på min portfolio kan du få et indblik i de projekter og opgaver, jeg har arbejdet med indtil nu. Tag
+                endelig et kig
+                rundt og få et indblik i, hvad jeg brænder for, og hvad jeg har lært indtil videre.</p>
+        </div>
+        <div class="knap">
+            <a href="portfolio.html">
+                <img class="knap_img" src="img/knap_p.webp" alt="portfolio" style="width:200px;">
+            </a>
+            <a href="portfolio.html">
+                <img class="knap_img" src="img/knap_o.webp" alt="portfolio" style="width:200px;">
+            </a>
+        </div>
+        <div class="billeder_kasser">
+            <div class="billede_kasse">
+                <img class="img_forside" src="img/billede_1_ps.webp" alt="billede 1">
+            </div>
+            <div class="billede_kasse">
+                <img class="img_forside" src="img/billede_2_ps.webp" alt="billede 2">
+            </div>
+            <div class="billede_kasse">
+                <img class="img_forside" src="img/billede_3_ps.webp" alt="billede 3">
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <p>Email: <a href="mailto:Miasdk@hotmail.dk" class="underline">Miasdk@hotmail.dk</a></p>
+        <p>Finsensvej, 2000 Frederiksberg</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>
