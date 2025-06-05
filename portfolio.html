@@ -4,18 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo" src="img/logo.webp" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <h1 class="h1">Portfolio</h1>
+
+        <div class="portfolio_grid">
+
+            <div class="portfolio_kasse">
+                <a href="temaside_2.html">
+                    <div class="img_kasse">
+                        <img src="img/website_02.webp" alt="Tema 02">
+                    </div>
+                    <p class="portfolio_titel">Tema 02 - Grundlæggende web</p>
+                </a>
+            </div>
+
+
+            <div class="portfolio_kasse">
+                <a href="temaside_3.html">
+                    <div class="img_kasse">
+                        <img src="img/website_03.webp" alt="Tema 03">
+                    </div>
+                    <p class="portfolio_titel">Tema 03 - Grundlæggende UX/UI</p>
+                </a>
+            </div>
+
+
+            <div class="portfolio_kasse">
+                <a href="temaside_4.html">
+                    <div class="img_kasse">
+                        <img src="img/website_04.webp" alt="Tema 04">
+                    </div>
+                    <p class="portfolio_titel">Tema 04 - Grundlæggende animation</p>
+                </a>
+            </div>
+
+
+            <div class="portfolio_kasse">
+                <a href="temaside_5.html">
+                    <div class="img_kasse">
+                        <img src="img/website_05.webp" alt="Tema 05">
+                    </div>
+                    <p class="portfolio_titel">Tema 05 - Grundlæggende indhold</p>
+                </a>
+            </div>
+        </div>
+
+
+
     </main>
 
-    <footer>
+    <footer class="footer">
+        <p>Email: <a href="mailto:Miasdk@hotmail.dk" class="underline">Miasdk@hotmail.dk</a></p>
+        <p>Finsensvej, 2000 Frederiksberg</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  /* Fjerner blå og tsreg under link */
+  text-decoration: none;
+  color: inherit;
+}
+
 /**************************** Forside *****************************/
 body {
   background-color: #f1eee7;
@@ -53,7 +59,7 @@ body {
 
 .mappe img.pil {
   position: absolute;
-  top: 280px; /* Justér så pilen placeres hvor du vil */
+  top: 280px; /* Justér så pilen placeres hvor jeg vil */
   left: 50%; /* Centrer pilen horisontalt */
   transform: translateX(-50%); /* Flyt pilen præcist til center */
   width: 20px; /* eller den størrelse du ønsker */
@@ -65,6 +71,7 @@ body {
   text-align: center;
   font-weight: 400;
   color: #889a6f;
+  margin: 10px;
 }
 .h2 {
   font-family: "Nothing You Could Do";
@@ -75,11 +82,11 @@ body {
 }
 .pil {
   text-align: center;
-  width: 100%; /* eller hvad der passer */
+  width: 100%;
 }
 
 .pil_img {
-  width: 20px; /* eller den størrelse du ønsker */
+  width: 20px;
   height: auto;
 }
 .p {
@@ -129,7 +136,43 @@ body {
   padding: 20px;
 }
 
+/************************* Portfolio *************************/
+body {
+  background-color: #f4f1eb;
+  font-family: sans-serif;
+}
+
+.portfolio_grid {
+  display: grid;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio_kasse {
+  text-align: center;
+}
+
+.img_kasse img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+  cursor: pointer;
+}
+
+.img_kasse img:hover {
+  filter: grayscale(0%);
+}
+
+.portfolio_titel {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 800px) {
+  /* Forside */
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -206,9 +249,13 @@ body {
     font-size: 16px;
     margin-top: 40px;
   }
+  /* Portfolio */
+  .portfolio_grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/************************** menu **********************/
+/************************** Menu *************************/
 * {
   margin: 0;
   padding: 0;
