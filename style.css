@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 a {
-  /* Fjerner blå og tsreg under link */
+  /* Fjerner blå og streg under link */
   text-decoration: none;
   color: inherit;
 }
@@ -28,8 +28,8 @@ body {
 }
 .mappe h1 {
   position: absolute; /* Lægger h1 ovenpå billedet */
-  top: 50%; /* Vertikal placering */
-  left: 50%; /* Horisontal placering */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%); /* Centrerer både horisontalt og vertikalt */
   color: #889a6f;
   font-size: 80px;
@@ -37,20 +37,20 @@ body {
   border-radius: 8px;
 }
 .mappe h2 {
-  position: absolute; /* Lægger h1 ovenpå billedet */
-  top: 60%; /* Vertikal placering */
-  left: 50%; /* Horisontal placering */
-  transform: translate(-50%, -50%); /* Centrerer både horisontalt og vertikalt */
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #000000;
   font-size: 19px;
   padding: 10px;
   border-radius: 8px;
 }
 .mappe h3 {
-  position: absolute; /* Lægger h1 ovenpå billedet */
-  top: 85%; /* Vertikal placering */
-  left: 50%; /* Horisontal placering */
-  transform: translate(-50%, -50%); /* Centrerer både horisontalt og vertikalt */
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #000000;
   font-size: 15px;
   padding: 10px;
@@ -59,11 +59,10 @@ body {
 
 .mappe img.pil {
   position: absolute;
-  top: 280px; /* Justér så pilen placeres hvor jeg vil */
-  left: 50%; /* Centrer pilen horisontalt */
-  transform: translateX(-50%); /* Flyt pilen præcist til center */
-  width: 20px; /* eller den størrelse du ønsker */
-  cursor: pointer; /* evt. hvis pilen er klikbar */
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
 }
 
 .h1 {
@@ -144,7 +143,7 @@ body {
 
 .portfolio_grid {
   display: grid;
-  gap: 40px;
+  gap: 50px;
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -171,6 +170,58 @@ body {
   font-weight: bold;
 }
 
+/*********************** Om mig ***********************/
+.baggrund_streg {
+  position: fixed;
+  top: 115px;
+  bottom: 110px;
+  left: 50%;
+  width: 1px;
+  background-color: #000;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.billede_4 img,
+.billede_5 img,
+.billede_6 img {
+  width: 100%;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Tekstbokse */
+.kasse_1,
+.kasse_2,
+.kasse_3 {
+  padding: 1rem;
+}
+
+.p_2 {
+  font-family: "Nothing You Could Do";
+  margin: 10px;
+  font-size: 33px;
+}
+
+/* Socials */
+.instagram,
+.linkedin {
+  width: 60px;
+  height: auto;
+  margin: 10px;
+}
+.om_mig_grid .p_kasse_1,
+.om_mig_grid .p_kasse_2,
+.om_mig_grid .p_kasse_3,
+.om_mig_grid .p_kasse_4 {
+  max-width: 1000px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
 @media screen and (min-width: 800px) {
   /* Forside */
   main {
@@ -188,7 +239,7 @@ body {
   }
 
   .mappe img {
-    display: block; /* fjern mellemrum nedenunder billedet */
+    display: block;
     margin: 0 auto;
     max-width: 1036px;
     height: auto;
@@ -220,7 +271,7 @@ body {
   .p {
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -252,6 +303,73 @@ body {
   /* Portfolio */
   .portfolio_grid {
     grid-template-columns: 1fr 1fr;
+  }
+  /* Om mig*/
+  .om_mig_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .om_mig_grid .billede_4 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .om_mig_grid .kasse_1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .om_mig_grid .kasse_2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .om_mig_grid .billede_5 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .om_mig_grid .billede_6 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .om_mig_grid .kasse_3 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .om_mig_grid .billede_4 img,
+  .om_mig_grid .billede_5 img,
+  .om_mig_grid .billede_6 img {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .om_mig_grid .p_kasse_1,
+  .om_mig_grid .p_kasse_2,
+  .om_mig_grid .p_kasse_3,
+  .om_mig_grid .p_kasse_4 {
+    max-width: 1000px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .p_kasse_1 {
+    margin-top: 40px;
+  }
+  .p_kasse_3,
+  .p_kasse_4 {
+    margin-top: 170px;
+  }
+  .links {
+    margin-top: 120px;
   }
 }
 
@@ -358,7 +476,7 @@ nav {
     display: block;
     background-color: #f1eee7;
     position: absolute;
-    top: 52px;
+    top: 50px;
     left: 0;
     width: 100%;
     z-index: 1;
