@@ -90,7 +90,7 @@ body {
 }
 .p {
   font-family: "Montserrat", sans-serif;
-  padding: 20px;
+  padding: 15px;
   margin: 10px;
   border-radius: 8px;
 }
@@ -222,6 +222,38 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/***************** Temaside ******************/
+.h1_tema {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #889a6f;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.h2_tema {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #889a6f;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.h2_tema_lang {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #889a6f;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.tema_billede img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 800px) {
   /* Forside */
   main {
@@ -272,7 +304,6 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     font-size: 20px;
-    text-align: center;
   }
 
   .knap {
@@ -299,6 +330,7 @@ body {
   .footer {
     font-size: 16px;
     margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
   }
   /* Portfolio */
   .portfolio_grid {
@@ -371,15 +403,31 @@ body {
   .links {
     margin-top: 120px;
   }
+  /* Temaside */
+  .tema_kasse_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    align-items: start;
+  }
+
+  .tema_kasse_lang {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+  .h1_tema {
+    margin-left: 70px;
+  }
+  .h2_tema {
+    margin-left: 13px;
+  }
+  .h2_tema_lang {
+    margin-left: 70px;
+  }
 }
 
 /************************** Menu *************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
   z-index: 1000;
   position: sticky;
@@ -424,7 +472,7 @@ nav {
   transition: color 0.3s;
   text-align: end;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
