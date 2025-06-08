@@ -4,18 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <title>Temaside</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo" src="img/logo.webp" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
 
     <main>
-    </main>
+        <h1 class="h1_tema">Temaside 02</h1>
+        <a href="https://miagerdes.dk/kea/02_web/website/">
+            <p class="p">
+                https://miagerdes.dk/kea/02_web/website/
+            </p>
+        </a>
 
-    <footer>
+        <div class="tema_kasse_lang">
+            <div class="tekst">
+                <h2 class="h2_tema_lang">Beskrivelse af tema og opgave</h2>
+                <p class="p">I Tema 02 fik vi til opgave at udvikle et responsivt website baseret på udleverede billeder
+                    og tekstmateriale. Gennem
+                    dette projekt lærte vi de grundlæggende principper i HTML og CSS. Websitet, der omhandlede
+                    computere, fungerede som
+                    vores studiestartsprøve og var adgangsgivende til resten af semesteret. De individuelle designvalg,
+                    såsom farver blev
+                    implementeret via CSS.</p>
+                <p class="p">Vi blev introduceret til centrale designprincipper og lærte om betydningen af layout,
+                    wireframes og gestaltlovene.
+                    Wireframes har siden været et fast element i alle temaer og fungerer som et vigtigt redskab til at
+                    skabe overblik i både
+                    design- og kodeprocessen.</p>
+                <p class="p">Gestaltlovene dækker blandt andet over visuelt hierarki, kontrast, farveteori og typografi.
+                    Vi lærte også forskellen på
+                    skrifttyper med og uden seriffer samt betydningen af en læsbar og troværdig typografi, der
+                    understøtter websitets udtryk
+                    og formål.
+                </p>
+            </div>
+        </div>
+
+        <div class="tema_kasse_grid">
+            <div class="tema_billede">
+                <img src="img/tema_02_stort.webp" alt="billede af website">
+            </div>
+            <div class="tekst">
+                <h2 class="h2_tema">Proces, løsning og læring</h2>
+                <p class="p">Arbejdet med at kode websitet til studiestartsprøven begyndte med at skabe overblik over
+                    det eksisterende indhold,
+                    billeder, tekst og wireframes samt planlægningen af strukturen af de enkelte HTML-sider.</p>
+                <p class="p">Derefter kodede jeg systematisk hver HTML-side med det relevante indhold og arbejdede til
+                    sidst med forskellige
+                    farvevalg og styling i CSS.</p>
+                <p class="p">I dette tema fik jeg mine første erfaringer med kodning i Visual Studio Code. Jeg blev
+                    introduceret til mobile-first
+                    tilgangen og lærte, hvordan man opbygger layout med CSS grid.</p>
+            </div>
+        </div>
+
+        <div class="tema_kasse_grid">
+            <div class="tekst">
+                <h2 class="h2_tema">Introduktion til Figma</h2>
+                <p class="p">I dette tema blev vi introduceret til Figma gennem en opgave, hvor vi skulle designe et
+                    visitkort, der med både ord og
+                    visuel stil beskrev os selv.</p>
+                <p class="p">Formålet var at lære programmets grundlæggende funktioner at kende og samtidig lære sine
+                    medstuderende bedre at kende.</p>
+            </div>
+            <div class="tema_billede">
+                <img src="img/visitkort.webp" alt="visitkort">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Email: <a href="mailto:Miasdk@hotmail.dk" class="underline">Miasdk@hotmail.dk</a></p>
+        <p>Finsensvej, 2000 Frederiksberg</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>
