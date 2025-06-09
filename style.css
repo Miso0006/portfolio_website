@@ -9,7 +9,7 @@ a {
   color: inherit;
 }
 
-/**************************** Forside *****************************/
+/*************************** Forside ***************************/
 body {
   background-color: #f1eee7;
 }
@@ -174,10 +174,10 @@ body {
 
 .portfolio_titel {
   margin-top: 10px;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
-/*********************** Om mig ***********************/
+/*************************** Om mig ****************************/
 .baggrund_streg {
   position: fixed;
   top: 115px;
@@ -229,7 +229,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/***************** Temaside ******************/
+/************************ Temaside ************************/
 .h1_tema {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -261,7 +261,25 @@ body {
   padding: 5px;
 }
 
-/******************** Media *********************/
+/********************** Footer ***********************/
+.footer {
+  background-color: #f1eee7;
+  color: #000000;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+}
+
+.footer img {
+  width: 65px;
+}
+
+/********************** Media ************************/
 @media screen and (min-width: 800px) {
   /* Forside */
   main {
