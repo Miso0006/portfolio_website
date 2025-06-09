@@ -95,6 +95,13 @@ body {
   border-radius: 8px;
 }
 
+.p_forside {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
 .knap {
   text-align: center;
 }
@@ -236,6 +243,7 @@ body {
   font-weight: 400;
   color: #889a6f;
   margin: 10px;
+  padding: 10px;
 }
 
 .h2_tema_lang {
@@ -243,6 +251,7 @@ body {
   font-weight: 400;
   color: #889a6f;
   margin: 10px;
+  padding: 10px;
 }
 
 .tema_billede img {
@@ -252,6 +261,7 @@ body {
   padding: 5px;
 }
 
+/******************** Media *********************/
 @media screen and (min-width: 800px) {
   /* Forside */
   main {
@@ -300,8 +310,17 @@ body {
 
   .p {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px;
+    padding: 10px;
     font-size: 20px;
+  }
+  .p_forside {
+    max-width: 1200px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
   }
 
   .knap {
